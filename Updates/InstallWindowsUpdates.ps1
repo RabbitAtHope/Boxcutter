@@ -1,9 +1,9 @@
 try {
-	"⏳ Installing updates..."
+	Write-Output "⏳ Installing updates..."
 	& winget upgrade --all --include-unknown
-	"✅ Updates installed."
+	Write-Output "✅ Updates installed."
 	exit 0
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	Write-Output "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($_.Exception.Message)"
 	exit 1
 }

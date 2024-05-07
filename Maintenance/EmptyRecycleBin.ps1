@@ -1,9 +1,9 @@
 try {
-	"⏳ Cleaning recycle bin on all drives..."
+	Write-Output "⏳ Cleaning recycle bin on all drives..."
 	Clear-RecycleBin -Confirm:$false
-	"✅ Recycle bin emptied."
+	Write-Output "✅ Recycle bin emptied."
 	exit 0
 } catch {
-	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	Write-Output "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($_.Exception.Message)"
 	exit 1
 }

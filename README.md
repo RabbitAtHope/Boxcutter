@@ -7,3 +7,6 @@
 A collection of small, useful PowerShell scripts for Windows server maintenance and sysadmin work, particularly Windows 2019 and newer servers. Designed to give a one-click point-and-shoot for tedious and repetitive tasks.
 
 </div>
+
+## ➡️ Related tools
+- 🗡️ <a href="https://github.com/RabbitAtHope/Switchblade"><i>Switchblade</i></a> (Linux toolbox)
